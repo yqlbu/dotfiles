@@ -1,0 +1,4 @@
+/vim/
+
+/nvim/.config/nvim/*.swp
+/nvim/.config/nvim/autoload
