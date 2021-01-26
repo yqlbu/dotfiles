@@ -56,7 +56,7 @@ nvim_setup() {
   mkdir -p $HOME/.vim
   mkdir -p $HOME/.config/nvim
   git clone https://github.com/yqlbu/dotfiles.git $HOME/dotfiles >/dev/null 2>&1
-  cp -r $HOME/dotfiles/nvim ~/.config
+  cp -r $HOME/dotfiles/nvim/.config/nvim ~/.config
   nvim
 }
 
