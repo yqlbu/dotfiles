@@ -9,6 +9,12 @@ let g:rnvimr_pick_enable = 1
 
 "let g:rnvimr_ranger_cmd = 'ranger --cmd="set column_ratios 1,1"'
 
+" Draw border with both
+let g:rnvimr_ranger_cmd = 'ranger --cmd="set draw_borders both"'
+
+" Change the border's color
+let g:rnvimr_border_attr = {'fg': 121, 'bg': -1}
+
 let g:rnvimr_presets = [
             \ {'width': 0.800, 'height': 0.800}]
 
