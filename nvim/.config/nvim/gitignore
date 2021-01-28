@@ -5,3 +5,4 @@ plugged/
 sessions/
 .netrwhist
 .vim-bookmarks
+autoload/
