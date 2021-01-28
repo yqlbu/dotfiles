@@ -60,7 +60,6 @@ nvim_setup() {
   mkdir -p $HOME/.config/nvim
   git clone https://github.com/yqlbu/dotfiles.git $HOME/dotfiles >/dev/null 2>&1
   cp -r $HOME/dotfiles/nvim/.config/nvim/* ~/.config/nvim
-  rm -rf ~/.config/nvim/autoload
   echo -e "==> [Step 4 ] installing neovim plugins"
   nvim --headless +PlugInstall +qall > /dev/null 2>&1
 }

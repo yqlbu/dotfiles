@@ -8,11 +8,11 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 ~/dotfiles/nvim/.config/nvim/gitignore
+badd +0 ~/dotfiles/nvim/.config/nvim/install.sh
 argglobal
 %argdel
-$argadd gitignore
-edit ~/dotfiles/nvim/.config/nvim/gitignore
+$argadd install.sh
+edit ~/dotfiles/nvim/.config/nvim/install.sh
 set splitbelow splitright
 wincmd t
 set winminheight=0
@@ -28,12 +28,12 @@ setlocal fdl=99
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 8 - ((7 * winheight(0) + 24) / 49)
+let s:l = 60 - ((37 * winheight(0) + 24) / 49)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-8
-normal! 09|
+60
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
