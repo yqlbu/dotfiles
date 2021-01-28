@@ -106,6 +106,7 @@ source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-configs/minimap.vim
 " === FZF
 "default command :FZF
+"source $HOME/.config/nvim/plug-configs/fzf.vim
 " === UndoTree
 " default key mapping <S-l> or L
 " === Any Jump
