@@ -21,7 +21,7 @@ class Monokai(ColorScheme):
             else:
                 attr = normal
             if context.empty or context.error:
-                fg = 161
+                fg = 121
             if context.border:
                 fg = 254
             if context.media:
@@ -97,7 +97,7 @@ class Monokai(ColorScheme):
             if context.loaded:
                 bg = self.progress_bar_color
             if context.vcsinfo:
-                fg = 161
+                fg = 196
                 attr &= ~bold
             if context.vcscommit:
                 fg = 193
