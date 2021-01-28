@@ -119,7 +119,6 @@ alias pacsyu='sudo pacman -Syyu --noconfirm'
 alias yaysua='yay -Sua --noconfirm'
 alias yaysyu="yay -Syu --noconfirm"
 alias parusyu='paru -Syu --noconfirm'
-alias paru='paru -Syu --noconfirm'
 
 # shutdown and reboot
 alias reboot='sudo reboot'
