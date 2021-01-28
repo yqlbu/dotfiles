@@ -6,11 +6,11 @@ from ranger.gui.color import *
 
 
 class Monokai(ColorScheme):
-    progress_bar_color = 208
+    progress_bar_color = 48
 
     def use(self, context):
         fg, bg, attr = default_colors
-        fg = 121
+        fg = 255
 
         if context.reset:
             return fg, bg, attr
@@ -26,7 +26,7 @@ class Monokai(ColorScheme):
                 fg = 254
             if context.media:
                 if context.image:
-                    fg = 208
+                    fg = 121
                 else:
                     fg = 144
             if context.container:
@@ -62,7 +62,7 @@ class Monokai(ColorScheme):
                     attr |= bold
                 if context.marked:
                     attr |= bold
-                    fg = 208
+                    fg = 121
             if context.badinfo:
                 if attr & reverse:
                     bg = 161
@@ -72,9 +72,9 @@ class Monokai(ColorScheme):
         elif context.in_titlebar:
             attr |= bold
             if context.hostname:
-                fg = context.bad and 161 or 208
+                fg = context.bad and 161 or 47
             elif context.directory:
-                fg = 118
+                fg = 39
             elif context.tab:
                 if context.good:
                     bg = green
@@ -84,12 +84,12 @@ class Monokai(ColorScheme):
         elif context.in_statusbar:
             if context.permissions:
                 if context.good:
-                    fg = 118
+                    fg = 177
                 elif context.bad:
                     fg = 161
             if context.marked:
                 attr |= bold | reverse
-                fg = 208
+                fg = 121
             if context.message:
                 if context.bad:
                     attr |= bold
@@ -97,10 +97,10 @@ class Monokai(ColorScheme):
             if context.loaded:
                 bg = self.progress_bar_color
             if context.vcsinfo:
-                fg = 196
+                fg = 255
                 attr &= ~bold
             if context.vcscommit:
-                fg = 193
+                fg = 47
                 attr &= ~bold
 
         if context.text:
