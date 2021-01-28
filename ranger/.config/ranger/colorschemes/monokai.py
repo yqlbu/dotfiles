@@ -4,12 +4,13 @@
 from ranger.gui.colorscheme import ColorScheme
 from ranger.gui.color import *
 
+
 class Monokai(ColorScheme):
     progress_bar_color = 208
 
     def use(self, context):
         fg, bg, attr = default_colors
-        fg = 252
+        fg = 49
 
         if context.reset:
             return fg, bg, attr
@@ -22,7 +23,7 @@ class Monokai(ColorScheme):
             if context.empty or context.error:
                 fg = 161
             if context.border:
-                fg = 252
+                fg = 159
             if context.media:
                 if context.image:
                     fg = 208
@@ -32,10 +33,10 @@ class Monokai(ColorScheme):
                 fg = 135
             if context.directory:
                 attr |= bold
-                fg = 81
+                fg = 80
             elif context.executable and not \
                     any((context.media, context.container,
-                        context.fifo, context.socket)):
+                         context.fifo, context.socket)):
                 attr |= bold
                 fg = 118
             if context.socket:
@@ -102,7 +103,6 @@ class Monokai(ColorScheme):
                 fg = 193
                 attr &= ~bold
 
-
         if context.text:
             if context.highlight:
                 attr |= reverse
@@ -119,7 +119,6 @@ class Monokai(ColorScheme):
                     fg = self.progress_bar_color
                 else:
                     bg = self.progress_bar_color
-
 
         if context.vcsfile and not context.selected:
             attr &= ~bold
