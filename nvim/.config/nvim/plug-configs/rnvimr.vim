@@ -7,7 +7,7 @@ let g:rnvimr_draw_border = 1
 " Make Ranger to be hidden after picking a file
 let g:rnvimr_pick_enable = 1
 
-"let g:rnvimr_ranger_cmd = 'ranger --cmd="set column_ratios 1,1"'
+let g:rnvimr_ranger_cmd = 'ranger --cmd="set column_ratios 1,1"'
 
 " Draw border with both
 let g:rnvimr_ranger_cmd = 'ranger --cmd="set draw_borders both"'
