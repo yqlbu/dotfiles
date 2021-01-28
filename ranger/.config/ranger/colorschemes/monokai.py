@@ -10,7 +10,7 @@ class Monokai(ColorScheme):
 
     def use(self, context):
         fg, bg, attr = default_colors
-        fg = 49
+        fg = 121
 
         if context.reset:
             return fg, bg, attr
@@ -23,7 +23,7 @@ class Monokai(ColorScheme):
             if context.empty or context.error:
                 fg = 161
             if context.border:
-                fg = 159
+                fg = 254
             if context.media:
                 if context.image:
                     fg = 208
