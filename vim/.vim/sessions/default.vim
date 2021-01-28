@@ -8,11 +8,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 ~/dotfiles/nvim/.config/nvim/install.sh
+badd +60 ~/workspace/neovim-server/bootstrap.sh
+badd +0 ~/dotfiles/nvim/.config/nvim/init.vim
 argglobal
 %argdel
-$argadd install.sh
-edit ~/dotfiles/nvim/.config/nvim/install.sh
+$argadd ~/workspace/neovim-server/bootstrap.sh
+edit ~/dotfiles/nvim/.config/nvim/init.vim
 set splitbelow splitright
 wincmd t
 set winminheight=0
@@ -28,11 +29,11 @@ setlocal fdl=99
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 60 - ((37 * winheight(0) + 24) / 49)
+let s:l = 33 - ((32 * winheight(0) + 24) / 49)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-60
+33
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'

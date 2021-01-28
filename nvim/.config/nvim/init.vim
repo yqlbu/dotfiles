@@ -33,8 +33,6 @@ source $HOME/.config/nvim/machine_specific.vim
 " ==========================
 let g:neoterm_autoscroll = 1
 autocmd TermOpen term://* startinsert
-tnoremap <C-N> <C-\><C-N>
-tnoremap <C-O> <C-\><C-N><C-O>
 let g:terminal_color_0  = '#000000'
 let g:terminal_color_1  = '#FF5555'
 let g:terminal_color_2  = '#50FA7B'
