@@ -57,7 +57,7 @@ set ttyfast                                               " Make scrolling faste
 set lazyredraw                                            " Make scrolling faster
 set visualbell
 "set colorcolumn=100                                      " Envoke colorcolumn on the right
-set updatetime=300                                        " Faster completion
+set updatetime=200                                        " Faster completion
 "set notimeout                                            " Set notimeout
 set timeoutlen=500                                        " By default timeoutlen is 1000 ms
 set virtualedit=block

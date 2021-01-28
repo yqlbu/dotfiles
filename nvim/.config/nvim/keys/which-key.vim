@@ -26,7 +26,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'Comment' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'Explorer' ]
 let g:which_key_map['f'] = [ ':Files'                     , 'Search Files' ]
-let g:which_key_map['r'] = [ ':Ranger'                    , 'Ranger' ]
+let g:which_key_map['r'] = [ ':RnvimrToogle'              , 'Ranger' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'Start Screen' ]
 let g:which_key_map['p'] = [ '<Plug>(coc-format-selected)', 'Prettier format' ]
 let g:which_key_map['h'] = [ '<C-w>h'                     , 'Focus Left Window']
@@ -37,16 +37,16 @@ let g:which_key_map['l'] = [ '<C-w>l'                     , 'Focus Right Window'
 
 " w is for window operations
 let g:which_key_map.w = {
-      \ 'name' : '+Window' ,
-      \ 'v' : ['<C-w>v'          , 'Split window vertically']       ,
-      \ 'h' : ['<C-w>s'          , 'Split window horizontally']     ,
-      \ '=' : [':vertical res+5' , 'Increase current window width'] ,
-      \ '-' : [':vertical res-5' , 'Decrease current window width'] ,
-      \ }
+    \ 'name' : '+Window' ,
+    \ 'v' : ['<C-w>v'          , 'Split window vertically']       ,
+    \ 'h' : ['<C-w>s'          , 'Split window horizontally']     ,
+    \ '=' : [':vertical res+5' , 'Increase current window width'] ,
+    \ '-' : [':vertical res-5' , 'Decrease current window width'] ,
+    \ }
 
 " t is for terminal operations
 let g:which_key_map.t = {
-      \ 'name' : '+Terminal' ,
+    \ 'name' : '+Terminal' ,
       \ ';' : [':FloatermNew'            , 'terminal'] ,
       \ 'd' : [':FloatermNew lazydocker' , 'docker']   ,
       \ 'y' : [':FloatermNew ytop'       , 'ytop']     ,
