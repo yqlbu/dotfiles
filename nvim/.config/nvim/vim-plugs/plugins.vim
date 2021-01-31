@@ -4,6 +4,7 @@
 
 call plug#begin('~/.vim/plugged')
 
+" ColorScheme
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
@@ -32,14 +33,15 @@ Plug 'liuchengxu/vim-which-key'
 " File navigation
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'kevinhwang91/rnvimr'
+
+" File Searching
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-Plug 'kevinhwang91/rnvimr'
-Plug 'pechorin/any-jump.vim'
 
 " Taglist
-Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
+" Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
 
 " Float Term
 Plug 'voldikss/vim-floaterm'
@@ -76,12 +78,12 @@ Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-p
 Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
 
 " Markdown
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-Plug 'dkarter/bullets.vim'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}                                                   "  Instant Markdown Preview
+Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] } "  Markdown Table Enhancement
+Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }                       "  Generate Table of Content
+Plug 'tpope/vim-markdown'                                                                               "  Support other filename other than README.md
 
-" Bookmarks
+"Bookmarks
 Plug 'kshenoy/vim-signature'
 
 " Editor Enhancement
@@ -96,8 +98,6 @@ Plug 'svermeulen/vim-subversive'
 Plug 'theniceboy/argtextobj.vim'
 Plug 'rhysd/clever-f.vim'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'theniceboy/pair-maker.vim'
-Plug 'theniceboy/vim-move'
 Plug 'Yggdroot/indentLine'
 Plug 'wfxr/minimap.vim'
 "Plug 'mj-hd/vim-picomap', { 'do': 'bash install.sh' }
