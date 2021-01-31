@@ -53,6 +53,7 @@ plug_dependencies() {
   sudo pacman -S nodejs yarn --noconfirm >/dev/null 2>&1
   sudo npm i -g neovim vim-node-rpc >/dev/null 2>&1
   sudo npm i -g bash-language-server --noconfirm >/dev/null 2>&1
+  sudo npm i -g instant-markdown-d@next --noconfirm >/dev/null 2>&1
 }
 
 nvim_setup() {
