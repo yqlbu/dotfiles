@@ -8,8 +8,8 @@ autocmd VimEnter * nnoremap <silent> J 5j
 autocmd VimEnter * nnoremap <silent> K 5k
 autocmd VimEnter * nnoremap <silent> L w
 autocmd VimEnter * nnoremap <silent> H b
-nnoremap <C-l> $
-nnoremap <C-h> 0
+nnoremap <C-e> $
+nnoremap <C-a> 0
 vnoremap <C-e> $
 vnoremap <C-a> 0
 inoremap <C-e> <C-o>$
@@ -32,7 +32,7 @@ map sc :set spell!<CR>
 map fg :r !figlet
 
 " Folding
-noremap <C-o> za
+" noremap <C-o> za
 
 " Use <space> =- to change tab
 map tt :tabe<CR>
@@ -45,15 +45,18 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-" Use > or < to indent or undent in visual line mode
-vnoremap < <gv
-vnoremap > >gv
-
-" Insert mode binding
-inoremap jj <esc>:w<CR>
+" Use > or < to indent or unindent in visual line mode
+vnoremap <S-TAB> <gv
+vnoremap <TAB> >gv
+" Use <TAB> to indent or unindent in normal mode
+" nnoremap <TAB> >>
+" nnoremap <S-TAB> <<
 " Use TAB to indent and Shift-TAB to undent in insert mode
 inoremap <TAB> <C-t>
 inoremap <S-TAB> <C-d>
+
+" Insert mode binding
+inoremap jj <esc>:w<CR>
 
 " split window
 map sr :set splitright<CR>:vsplit<CR>
@@ -72,10 +75,10 @@ map <LEADER>k <C-w>k
 map <LEADER>l <C-w>l
 
 " Use <space> + arrow key to resize windows
-"map <LEADER><up> :res+5<CR>
-"map <LEADER><down> :res-5<CR>
-"map <LEADER><left> :vertical resize-5<CR>
-"map <LEADER><right> :vertical resize+5<CR>
+map <LEADER><up> :res+5<CR>
+map <LEADER><down> :res-5<CR>
+map <LEADER><left> :vertical resize-5<CR>
+map <LEADER><right> :vertical resize+5<CR>
 
 "Commenter
 autocmd VimEnter * noremap <LEADER>/ :call NERDComment(0,"toggle")<CR>
@@ -126,11 +129,11 @@ tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
 " === Minimap
 nnoremap <silent> <LEADER>m :MinimapToggle<CR>
 
-" === FZF
-" nnoremap ff :Files<CR>
-" nnoremap fs :Lines<CR>
-
 " === LeaderF
 noremap ff :Leaderf file<CR>
 noremap fs :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 noremap fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+
+" === FZF
+" nnoremap ff :Files<CR>
+" nnoremap fs :Lines<CR>
