@@ -38,6 +38,7 @@ check_python3() {
   echo -e "==> [step 2] confirmed python3 and pip are installed, moving forward"
   echo -e "==> [step 2] installing pynvim"
   pip install -U pynvim >/dev/null 2>&1
+  pip install -U neovim-remote >/dev/null 2>&1
   echo -e "==> [step 3] installing dependencies for plugins" && plug_dependencies
   main
 }
@@ -50,7 +51,7 @@ plug_dependencies() {
   sudo pacman -S go --noconfirm >/dev/null 2>&1
   sudo pacman -S make --noconfirm >/dev/null 2>&1
   sudo pacman -S ctags --noconfirm >/dev/null 2>&1
-  sudo pacman -S nodejs yarn --noconfirm >/dev/null 2>&1
+  sudo pacman -S nodejs yarn npm --noconfirm >/dev/null 2>&1
   sudo npm i -g neovim vim-node-rpc >/dev/null 2>&1
   sudo npm i -g bash-language-server --noconfirm >/dev/null 2>&1
   sudo npm i -g instant-markdown-d@next --noconfirm >/dev/null 2>&1
