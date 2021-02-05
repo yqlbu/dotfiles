@@ -137,3 +137,6 @@ alias cs='cowsay'
 
 # default editor
 export EDITOR=nvim
+
+export PATH=/home/kev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
