@@ -105,5 +105,11 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH=/usr/local/cuda-10.2/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+
+# ALIAS
 alias ls='ls -l'
 alias vim='nvim'
+alias ..='cd ..'
+alias ...='cd ../../'
