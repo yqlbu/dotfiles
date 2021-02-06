@@ -106,3 +106,4 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='ls -l'
+alias vim='nvim'
