@@ -45,6 +45,7 @@ check_python3() {
 
 plug_dependencies() {
   sudo pacman -S code-minimap --noconfirm >/dev/null 2>&1
+  sudo pacman -S fzf --noconfirm >/dev/null 2>&1
   sudo pacman -S ytop bashtop --noconfirm >/dev/null 2>&1
   sudo pacman -S lazydocker --noconfirm >/dev/null 2>&1
   sudo pacman -S ranger --noconfirm >/dev/null 2>&1
