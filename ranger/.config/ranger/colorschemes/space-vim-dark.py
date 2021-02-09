@@ -6,7 +6,7 @@ from ranger.gui.color import *
 
 
 class Monokai(ColorScheme):
-    progress_bar_color = 42
+    progress_bar_color = 48
 
     def use(self, context):
         fg, bg, attr = default_colors
@@ -26,19 +26,19 @@ class Monokai(ColorScheme):
                 fg = 254
             if context.media:
                 if context.image:
-                    fg = 42
+                    fg = 121
                 else:
                     fg = 144
             if context.container:
                 fg = 135
             if context.directory:
                 attr |= bold
-                fg = 140
+                fg = 104
             elif context.executable and not \
                     any((context.media, context.container,
                          context.fifo, context.socket)):
                 attr |= bold
-                fg = 140
+                fg = 118
             if context.socket:
                 attr |= bold
                 fg = 135
@@ -72,9 +72,9 @@ class Monokai(ColorScheme):
         elif context.in_titlebar:
             attr |= bold
             if context.hostname:
-                fg = context.bad and 161 or 42
+                fg = context.bad and 161 or 47
             elif context.directory:
-                fg = 39
+                fg = 140
             elif context.tab:
                 if context.good:
                     bg = green
@@ -129,16 +129,16 @@ class Monokai(ColorScheme):
             elif context.vcsunknown:
                 fg = 161
             elif context.vcsstaged:
-                fg = 140
+                fg = 118
             elif context.vcssync:
-                fg = 140
+                fg = 118
             elif context.vcsignored:
                 fg = 252
 
         elif context.vcsremote and not context.selected:
             attr &= ~bold
             if context.vcssync:
-                fg = 140
+                fg = 118
             elif context.vcsbehind:
                 fg = 161
             elif context.vcsahead:
