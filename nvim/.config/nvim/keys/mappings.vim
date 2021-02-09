@@ -129,6 +129,8 @@ noremap <LEADER>u :UndotreeToggle<CR>
 " === Floaterm
 nnoremap <silent> <LEADER>T :FloatermToggle<CR>
 tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
+nnoremap <silent> <C-x> :FloatermToggle<CR>
+tnoremap <silent> <C-x> <C-\><C-n>:FloatermToggle<CR>
 
 " === Minimap
 nnoremap <silent> <LEADER>m :MinimapToggle<CR>
