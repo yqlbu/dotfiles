@@ -15,7 +15,7 @@ set exrc
 set secure
 
                     "  View and Edit
-" set number          "  enable line numbers
+set number          "  enable line numbers
 set relativenumber  "  enable relative line numbers
 "set guicursor=      "  set block cursor for insert mode
 set cursorline      "  enable highlighting of the current line
