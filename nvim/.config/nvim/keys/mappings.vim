@@ -146,3 +146,10 @@ noremap <C-g> :tabe<CR>:term lazygit<CR>
 " === FZF
 " nnoremap ff :Files<CR>
 " nnoremap fs :Lines<CR>
+
+" === Asyncrun
+" Python
+noremap <LEADER>py :AsyncRun -raw python %<CR>
+noremap <LEADER>pt :AsyncRun -mode=term -pos=floaterm -position=bottomright 
+" Golang
+

@@ -69,6 +69,9 @@ Plug 'othree/html5.vim'
 Plug 'alvan/vim-closetag'
 Plug 'yuezk/vim-js', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] }
 
+" Asyncrun
+Plug 'skywind3000/asyncrun.vim'
+
 " Go
 Plug 'fatih/vim-go' , { 'for': ['go', 'vim-plug'], 'tag': '*' }
 
