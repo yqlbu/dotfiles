@@ -86,8 +86,11 @@ Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'm
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }                       "  Generate Table of Content
 Plug 'tpope/vim-markdown'                                                                               "  Support other filename other than README.md
 
-"Bookmarks
+" Bookmarks
 Plug 'kshenoy/vim-signature'
+
+" Clipboard
+Plug 'kana/vim-fakeclip'
 
 " Editor Enhancement
 Plug 'jiangmiao/auto-pairs'

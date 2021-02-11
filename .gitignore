@@ -2,3 +2,5 @@
 
 /nvim/.config/nvim/*.swp
 /nvim/.config/nvim/autoload
+
+state.yml
